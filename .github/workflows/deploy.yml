@@ -18,9 +18,6 @@ jobs:
         with:
           python-version: 3.11
 
-      - name: Install dependencies
-        run: pip install -r app/requirements.txt
-
       - name: Generate Lambda ZIP
         run: zip -r lambda_function.zip app
 
